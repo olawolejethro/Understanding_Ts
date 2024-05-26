@@ -1,9 +1,19 @@
-function add(num1:number,num2:number) {
-     return num1 + num2
+/** @format */
+
+// const person: { name: string; age: number } = {
+const person = {
+  name: "jetpack",
+  age: 20,
+  hobbies: ["gaming", "cooking", "reading"],
+};
+
+// let MyFacouriteActivities: any;
+let MyFacouriteActivities: string[];
+
+MyFacouriteActivities = ["playing"];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase);
 }
-
-const number1 = 5
-const number2 = 6.4
-const result = add(number1,number2)
-
-console.log(result)
