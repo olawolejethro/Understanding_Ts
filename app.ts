@@ -1,17 +1,20 @@
 /** @format */
 
-function combine(input1: string | number, input2: string | number) {
-  let result;
-  if (typeof input1 === "number" && typeof input1 === "number") {
-    // result = input1 + input2;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
-  return result;
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
 
-const combinedAges = combine(30, 32);
+function printResult(num: number): void {
+  console.log("result :" + num);
+}
 
-console.log(combinedAges);
+printResult(add(10, 12));
 
-const combinedNames = combine("MAX", "Anna");
+// when you use void that means you are not returning anything in the function
+
+let combineValues: (a: number, b: number) => number;
+//  here we are telling javascript that the function assign to combine value can only take two parameter which are numbers and also return a number
+// function type allow us describe which type of function specifically we  want to user somewher
+
+combineValues = add;
+console.log(combineValues(5, 3));
