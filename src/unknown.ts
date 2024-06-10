@@ -1,18 +1,20 @@
 /** @format */
 
-//Unknown type
-let userInput: unknown;
-let userName: string;
+// /** @format */
 
-userInput = 5;
-userInput = "Max";
+// //Unknown type
+// let userInput: unknown;
+// let userName: string;
 
-if (typeof userInput === "string") {
-  userName = userInput;
-}
+// userInput = 5;
+// userInput = "Max";
 
-function generateError(messgae: string, code: number): never {
-  throw { messgae, errorCode: code };
-}
+// if (typeof userInput === "string") {
+//   userName = userInput;
+// }
 
-generateError("An error Occured", 500);
+// function generateError(messgae: string, code: number): never {
+//   throw { messgae, errorCode: code };
+// }
+
+// generateError("An error Occured", 500);
